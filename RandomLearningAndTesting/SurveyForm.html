@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+</body>
+
+
+<form id="survey-form">
+    <fieldset>
+        <legend>Information</legend>
+        <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" name="survey-form" required/>
+        <br/>
+        <label id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" name="survey-form" required />
+        <br/>
+        <label id="number-label">Age (optional):</label>
+        <input type="number" id="number" placeholder="Age" name="survey-form" min="18" max="150"/>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Which option best described your current role?</legend>
+        <select id="dropdown">
+            <option value="employed" selected>Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <input type="radio" id="definitely" name="recommend" value="recommend" />
+        <label for="definitely">Definitely</label>
+        <br/>
+        <input type="radio" id="maybe" name="recommend" value="recommend" />
+        <label for="maybe">Maybe</label>
+        <br/>
+        <input type="radio" id="not-sure" name="recommend" value="recommend" />
+        <label for="not-sure">Not Sure</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>What are your favourite features of freeCodeCamp?</legend>
+        <input type="checkbox" id="challenges" value="challenges" name="survey-form"/>
+        <label for="challenges">Challenges</label>
+        <br/>
+        <input type="checkbox" id="projects" value="projects" name="survey-form"/>
+        <label for="projects">Projects</label>
+        <br/>
+        <input type="checkbox" id="community" value="community" name="survey-form"/>
+        <label for="community">Community</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Are there any other comments you would like to make?</legend>
+        <textarea placeholder="Your comment..." name="survey-form" value="survey-form"></textarea>
+        <button type="submit" id="submit" name="survey-form" value="survey-form">Submit</button>
+    </fieldset>
+
+</form>
+
+
+</html>

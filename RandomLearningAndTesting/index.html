@@ -73,6 +73,48 @@
     <!--Ruby for pronounciation hints, such as East Asian characters.-->
     <ruby>明日<rp>(</rp><rt>Ashita</rt><rp>)</rp></ruby>
 
+    <!--Implicit connection between label and input in a form.-->
+    <form action="">
+      <label>
+        Email Address:
+        <input type="email" placeholder="Your email..." />
+      </label>
+    </form>
+
+    <!--Explicit connection between label and input in a form, so you can put the input and label far apart from each other in your HTML document.-->
+    <form action="">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" />
+    </form>
+
+    <!--Buttons.-->
+    <form action="">
+      <label>
+        Email Address:
+        <input type="email">
+      </label>
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset</button>
+      <input type="button" value="Show Alert" />
+    </form>
+
+    <!--More input attributes.-->
+    <form action="">
+      <label for="email">Email (Required):</label>
+      <input
+        required
+        type="email"
+        id="email"
+        name="email"
+        minlength="4"
+        maxlength="64"
+      />
+      <button type="submit">Submit</button>
+    </form>
+
+    <input type="email" disabled /> <br/>
+    <input type="email" readonly value="example@email.com" />
+
 
     </body>
 
